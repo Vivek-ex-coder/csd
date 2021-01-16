@@ -12,5 +12,11 @@ export class TestData implements InMemoryDbService {
                 password:'admin'
             }
         ];
-        return {users:user}  
+        let activityDetails = [
+            { id: 101, heading: 'this is for testing', desicription: 'It has a simple grid-like portfolio and a neat design, but the idea/theme is great.',btnInfo:'More Info' },
+            { id: 102, heading: 'HOSTING SEMINAR', desicription: 'It has a simple grid-like portfolio and a neat design, but the idea/theme is great.' ,btnInfo:'More Info'},
+            { id: 103, heading: 'HOSTING SEMINAR', desicription: 'It has a simple grid-like portfolio and a neat design, but the idea/theme is great.',btnInfo:'More Info' }
+            
+        ];
+        return {users:user,actdetails:activityDetails}  ;
     }}
