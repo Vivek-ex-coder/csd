@@ -1,1 +1,47 @@
-<p>login works!</p>
+<div class="background">
+    <div id="mydivon" style="display:block">
+        <div class="text">
+            <h1>Login..</h1>
+            <p>No Account? <a href="#mydivoff" onmousedown="toggleDiv('mydiv');">Signup</a></p>
+        </div>
+        <div class="box">
+            <form class="form" #regForm='ngForm' (ngSubmit)="Register1(regForm)">
+                <input type="text" class="username" placeholder="Username" required>
+                <input type="password" class="password" placeholder="Password" required>
+                <input type="submit" class="button" value="Login">
+            </form>
+        </div>
+    </div>
+    <div id="mydivoff" style="display:none">
+        <div class="text">
+            <h1>Signup..</h1>
+            <p>Have Account? <a href="#mydivon" onmousedown="toggleDiv('mydiv');">Login</a></p>
+        </div>
+        <div class="box1">
+            <form class="form" #regForm='ngForm' (ngSubmit)="Register2(regForm)">
+                <input type="text" class="fullname" placeholder="Full Name" required ngModel>
+                <input type="email" class="email" placeholder="someone@abc.com" required ngModel>
+                <input type="text" class="username" placeholder="Username" required ngModel>
+                <input type="password" class="password" placeholder="Password" required ngModel>
+                <input type="submit" class="button" value="Login">
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function toggleDiv(divid) {
+
+        varon = divid + 'on';
+        varoff = divid + 'off';
+
+        if (document.getElementById(varon).style.display == 'block') {
+            document.getElementById(varon).style.display = 'none';
+            document.getElementById(varoff).style.display = 'block';
+        }
+
+        else {
+            document.getElementById(varoff).style.display = 'none';
+            document.getElementById(varon).style.display = 'block'
+        }
+    }
+</script>
