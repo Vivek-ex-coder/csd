@@ -1,3 +1,4 @@
+import { MenuComponent } from './Component/menu/menu.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms' ;
@@ -12,7 +13,7 @@ import { HomeComponent } from './Component/Home/home.component';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    // MenuComponent
+    MenuComponent
   ],
   imports: [
     BrowserModule,
