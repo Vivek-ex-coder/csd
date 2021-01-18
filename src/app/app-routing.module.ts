@@ -1,3 +1,4 @@
+import { ComplaintComponent } from './Component/complaint/complaint.component';
 import { LoginComponent } from './Component/Login/login.component';
 import { HomeComponent } from './Component/Home/home.component';
 import { NgModule } from '@angular/core';
@@ -8,6 +9,8 @@ const routes: Routes = [
     path:'home',component: HomeComponent
   },{
     path:'login',component: LoginComponent
+  },{
+    path:'complaint',component:ComplaintComponent
   },{
     path:'**',component: LoginComponent
   }
