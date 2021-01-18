@@ -9,13 +9,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './Component/Login/login.component';
 import { HomeComponent } from './Component/Home/home.component';
+import { FeedbackformComponent } from './Component/FeedbackForm/feedbackform.component';
+import { ServiceComponent } from './Component/service/service.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    FeedbackformComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
