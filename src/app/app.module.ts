@@ -7,10 +7,11 @@ import { ReactiveFormsModule , FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './Component/Login/login.component';
-import { HomeComponent } from './Component/Home/home.component';
+import { LoginComponent } from './Component/login/login.component';
+import { HomeComponent } from './Component/home/home.component';
 import { FeedbackformComponent } from './Component/FeedbackForm/feedbackform.component';
 import { ServiceComponent } from './Component/service/service.component';
+import { ComplainComponent } from './Component/complain/complain.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ServiceComponent } from './Component/service/service.component';
     HomeComponent,
     MenuComponent,
     FeedbackformComponent,
-    ServiceComponent
+    ServiceComponent,
+    ComplainComponent
   ],
   imports: [
     BrowserModule,
