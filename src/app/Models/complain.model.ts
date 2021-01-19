@@ -1,4 +1,13 @@
+import { getMaxListeners } from "process";
+
 export class Complaint {
-    id: number = 0;
-    
+    id!: number;
+    CustomerName !: string ;
+    mail !: string ;
+    productName !: string ;
+    productId !: number ;
+    pAdress !:  string ;
+    Contact!: number ;
+    Repair !: string ;
+    Complain!: string ;
 }
