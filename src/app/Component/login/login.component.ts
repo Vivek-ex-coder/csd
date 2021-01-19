@@ -1,11 +1,11 @@
-import { Router, Routes } from '@angular/router';
 import { UserService } from './../../Service/user.service';
 import { Users } from '../../Models/users';
-import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import {FormGroup,FormBuilder,Validators } from '@angular/forms';
 import { User } from 'src/app/Models/user.model';
+import { Component, OnInit } from '@angular/core';
+import {FormGroup,FormBuilder,Validators } from '@angular/forms';
 
+import { Router, Routes } from '@angular/router';
 
 
 @Component({
