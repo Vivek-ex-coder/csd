@@ -1,1 +1,22 @@
 <app-menu></app-menu>
+<!-- <label for="input-2" class="control-label">Rate This</label>
+<input id="input-2" name="input-2" value="2.5" class="rating-loading"> -->
+<div class="container">
+    <span id="rateMe1"></span>
+  </div>
+  
+  <!-- rating.js file -->
+  <script src="js/addons/rating.js"></script>
+<script>
+// $(document).ready(function(){
+//     $('#input-2').rating({
+//         step: 1,
+//         starCaptions: {1: 'Very Poor', 2: 'Poor', 3: 'Ok', 4: 'Good', 5: 'Very Good'},
+//         starCaptionClasses: {1: 'text-danger', 2: 'text-warning', 3: 'text-info', 4: 'text-primary', 5: 'text-success'}
+//     });
+// });
+// Rating Initialization
+$(document).ready(function() {
+  $('#rateMe1').mdbRate();
+});
+</script>
