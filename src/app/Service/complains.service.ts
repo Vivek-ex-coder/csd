@@ -1,29 +1,29 @@
 import { Injectable } from '@angular/core';
-import {complainC} from '../Models/complainB';
+import {newComplain} from '../Models/complains';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ComplainBService {
+export class complainsService {
 
-  complainUrl="/api/complain2";
+  complainUrl="/api/complains";
 
   constructor(private http: HttpClient) { }
 
 
-  createcomplainD(complainA : complainC):Observable<complainC>{
+  createComplain(complain : newComplain):Observable<newComplain>{
     let httpHeaders = new HttpHeaders().set('Content-type','application/json');
     let options = {
       headers : httpHeaders
     };
-    return this.http.post<complainC>(this.complainUrl,complainA,options);
+    return this.http.post<newComplain>(this.complainUrl,complain,options);
   }
 
-  getcomplainDById(Id : string):Observable<complainC>{
+  getComplainById(Id : string):Observable<newComplain>{
       
-    return this.http.get<complainC>(this.complainUrl+"/"+Id);
+    return this.http.get<newComplain>(this.complainUrl+"/"+Id);
   }
   
 }

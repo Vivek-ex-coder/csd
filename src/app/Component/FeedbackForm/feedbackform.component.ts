@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {  feedBService } from './../../Service/feedB.service';
-import { feedC } from '../../Models/feedB';
+import {  feedbackService } from '../../Service/feedback.service';
+import { feeds } from '../../Models/feedback';
 import { Observable } from 'rxjs';
 import {FormGroup,FormBuilder,Validators } from '@angular/forms';
 
@@ -14,16 +14,16 @@ import { Router, Routes } from '@angular/router';
 })
 export class FeedbackformComponent implements OnInit {
 
-  feedA:feedC;
-  feedB:feedC;
+  feed:feeds;
+  feedback:feeds;
   homeIdToUpdate: any;
   // user: Observable<Users[]>;
   // user: Observable<Users[]>;
   flag: boolean = false;
 
-  constructor(private feedAService: feedBService, private formBuilder: FormBuilder,private routes:Router) {
-    this.feedA= new feedC;
-    this.feedB = new feedC;
+  constructor(private feedAService: feedbackService, private formBuilder: FormBuilder,private routes:Router) {
+    this.feed= new feeds;
+    this.feedback = new feeds;
    }
 
    ngOnInit(): void {

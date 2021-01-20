@@ -20,7 +20,7 @@ export class TestData implements InMemoryDbService {
                 password:'admin12'
             }
         ];
-        let complainA = [
+        let complain = [
             {
                 Id: 1001, 
                 custName: 'Rohan', 
@@ -33,7 +33,7 @@ export class TestData implements InMemoryDbService {
                 complain:'defective product '
             }
         ];
-        let feedA = [
+        let feed = [
             {
                  
                 userName: 'Rohan', 
@@ -48,6 +48,6 @@ export class TestData implements InMemoryDbService {
             { id: 103, heading: 'HOSTING SEMINAR', desicription: 'It has a simple grid-like portfolio and a neat design, but the idea/theme is great.',btnInfo:'More Info' }
             
         ];
-        return {users:user,complain2:complainA,feedB:feedA,actdetails:activityDetails}  ;
+        return {users:user,complains:complain,feedback:feed,actdetails:activityDetails}  ;
 
     }}

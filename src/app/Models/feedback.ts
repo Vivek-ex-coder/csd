@@ -1,4 +1,4 @@
-export class feedC {
+export class feeds {
     
     userName !: string ;
     Contact!: number ;

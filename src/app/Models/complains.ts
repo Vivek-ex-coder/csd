@@ -1,4 +1,4 @@
-export class complainC {
+export class newComplain{
     id!: number;
     CustomerName !: string ;
     mail !: string ;
