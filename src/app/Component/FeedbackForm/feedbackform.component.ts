@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {  feedBService } from './../../Service/feedB.service';
+import { feedC } from '../../Models/feedB';
+import { Observable } from 'rxjs';
+import {FormGroup,FormBuilder,Validators } from '@angular/forms';
+
+import { Router, Routes } from '@angular/router';
+
 
 @Component({
   selector: 'app-feedbackform',
@@ -7,9 +14,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedbackformComponent implements OnInit {
 
-  constructor() { }
+  feedA:feedC;
+  feedB:feedC;
+  homeIdToUpdate: any;
+  // user: Observable<Users[]>;
+  // user: Observable<Users[]>;
+  flag: boolean = false;
 
-  ngOnInit(): void {
+  constructor(private feedAService: feedBService, private formBuilder: FormBuilder,private routes:Router) {
+    this.feedA= new feedC;
+    this.feedB = new feedC;
+   }
+
+   ngOnInit(): void {
+    // this.logForm = this.formBuilder.group({
+    //   mainHeading:['',[Validators.required]],
+    //   desicription:['',[Validators.required]]
+    // });
   }
 
+  goToSubmit(){
+    
+  }
 }
