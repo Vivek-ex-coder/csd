@@ -1,9 +1,13 @@
+import { UserService } from './Service/user.service';
+import { TestData } from './testData';
 import { MenuComponent } from './Component/menu/menu.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import {HttpClientModule } from '@angular/common/http'; 
 import { ReactiveFormsModule , FormsModule} from '@angular/forms';
+import {  InMemoryWebApiModule  } from 'angular-in-memory-web-api';    
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +16,6 @@ import { HomeComponent } from './Component/home/home.component';
 import { FeedbackformComponent } from './Component/FeedbackForm/feedbackform.component';
 import { ServiceComponent } from './Component/service/service.component';
 import { ComplainComponent } from './Component/complain/complain.component';
-
 
 @NgModule({
   declarations: [
@@ -30,8 +33,10 @@ import { ComplainComponent } from './Component/complain/complain.component';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    InMemoryWebApiModule.forRoot(TestData)
+
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

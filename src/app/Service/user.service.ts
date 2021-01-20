@@ -27,6 +27,8 @@ export class UserService {
     return this.http.get<Users>(this.userUrl+"/"+userId);
   }
 
-  
+  getAllUsers():Observable<Users[]>{
+    return this.http.get<Users[]>(this.userUrl);
+  }
 
 }

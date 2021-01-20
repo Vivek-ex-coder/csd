@@ -10,6 +10,14 @@ export class TestData implements InMemoryDbService {
                 email:'rksingh@gmail.com',
                 phoneNumber: 922222221 ,
                 password:'admin'
+            },
+            {
+                userId: 102, 
+                firstName: 'Rishikesh', 
+                lastName: 'Singh',
+                email:'rahul@gmail.com',
+                phoneNumber: 922222221 ,
+                password:'admin12'
             }
         ];
         let activityDetails = [
