@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ComplainBService {
 
-  complainUrl="/api/complainB";
+  complainUrl="/api/complain2";
 
   constructor(private http: HttpClient) { }
 
