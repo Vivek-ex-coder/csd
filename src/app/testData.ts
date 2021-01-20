@@ -10,6 +10,27 @@ export class TestData implements InMemoryDbService {
                 email:'rksingh@gmail.com',
                 phoneNumber: 922222221 ,
                 password:'admin'
+            },
+            {
+                userId: 102, 
+                firstName: 'Rishikesh', 
+                lastName: 'Singh',
+                email:'rahul@gmail.com',
+                phoneNumber: 922222221 ,
+                password:'admin12'
+            }
+        ];
+        let complainA = [
+            {
+                Id: 1001, 
+                custName: 'Rohan', 
+                mail: 'rohan11@gmail.com',
+                productName:'iphone',
+                productId: 1101 ,
+                productAdress:'Delhi',
+                contactNumber: '9275634592',
+                repair:'yes',
+                complain:'defective product '
             }
         ];
         let activityDetails = [
@@ -18,5 +39,6 @@ export class TestData implements InMemoryDbService {
             { id: 103, heading: 'HOSTING SEMINAR', desicription: 'It has a simple grid-like portfolio and a neat design, but the idea/theme is great.',btnInfo:'More Info' }
             
         ];
-        return {users:user,actdetails:activityDetails}  ;
+        return {users:user,complain2:complainA,actdetails:activityDetails}  ;
+
     }}

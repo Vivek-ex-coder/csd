@@ -1,5 +1,5 @@
-import { LoginComponent} from './Component/login/login.component';
-import { HomeComponent } from './Component/home/home.component';
+import { LoginComponent} from './Component/Login/login.component';
+import { HomeComponent } from './Component/Home/home.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -7,6 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { FeedbackformComponent } from './Component/FeedbackForm/feedbackform.component';
 import { ServiceComponent } from './Component/service/service.component';
 import { ComplainComponent } from './Component/complain/complain.component';
+import { MenuComponent } from './Component/menu/menu.component';
 
 const routes: Routes = [
   {
@@ -14,13 +15,15 @@ const routes: Routes = [
   },{
     path:'login',component: LoginComponent
   },{
+    path:'menu',component: MenuComponent
+  },{
     path:'feedback',component: FeedbackformComponent
   },{
     path:'service',component:ServiceComponent
   },{
     path:'complain',component:ComplainComponent
   },{
-    path:'**',component: LoginComponent
+    path:'**',component:LoginComponent
   }
 ];
 
