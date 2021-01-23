@@ -14,17 +14,17 @@ import { Router, Routes } from '@angular/router';
 })
 export class FeedbackformComponent implements OnInit {
 
-  feed:feeds;
-  feedback:feeds;
-  homeIdToUpdate: any;
-  // user: Observable<Users[]>;
-  // user: Observable<Users[]>;
-  flag: boolean = false;
+  // feed:feeds;
+  // feedback:feeds;
+  // homeIdToUpdate: any;
+  // // user: Observable<Users[]>;
+  // // user: Observable<Users[]>;
+  // flag: boolean = false;
 
-  constructor(private feedAService: feedbackService, private formBuilder: FormBuilder,private routes:Router) {
-    this.feed= new feeds;
-    this.feedback = new feeds;
-   }
+  // constructor(private feedAService: feedbackService, private formBuilder: FormBuilder,private routes:Router) {
+  //   this.feed= new feeds;
+  //   this.feedback = new feeds;
+  //  }
 
    ngOnInit(): void {
     // this.logForm = this.formBuilder.group({
@@ -33,7 +33,7 @@ export class FeedbackformComponent implements OnInit {
     // });
   }
 
-  goToSubmit(){
+  // goToSubmit(){
     
-  }
+  // }
 }

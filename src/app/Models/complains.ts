@@ -1,11 +1,11 @@
 export class newComplain{
-    id!: number;
-    CustomerName !: string ;
+    Id!:number;
+    custName !: string ;
     mail !: string ;
     productName !: string ;
     productId !: number ;
-    pAdress !:  string ;
-    Contact!: number ;
-    Repair !: string ;
-    Complain!: string ;
+    productAdress !:  string ;
+    contactNumber!: number ;
+    repair !: string ;
+    complain!: string ;
 }

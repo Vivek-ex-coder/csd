@@ -14,26 +14,9 @@ import { Router, Routes } from '@angular/router';
 export class ComplainComponent implements OnInit {
 
   
-  complain:newComplain;
-  complains:newComplain;
-  homeIdToUpdate: any;
-  // user: Observable<Users[]>;
-  // user: Observable<Users[]>;
-  flag: boolean = false;
-
-  constructor(private userService: complainsService, private formBuilder: FormBuilder,private routes:Router) {
-    this.complain= new newComplain;
-    this.complains = new newComplain;
-   }
-
+ 
    ngOnInit(): void {
-    // this.logForm = this.formBuilder.group({
-    //   mainHeading:['',[Validators.required]],
-    //   desicription:['',[Validators.required]]
-    // });
   }
 
-  goToSubmit(){
-    
-  }
+  
 }
