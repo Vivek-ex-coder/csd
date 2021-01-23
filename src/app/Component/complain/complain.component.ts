@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ComplainBService } from './../../Service/complain2.service';
-import { complainC } from '../../Models/complainB';
+import { complainsService } from '../../Service/complains.service';
+import { newComplain } from '../../Models/complains';
 import { Observable } from 'rxjs';
 import {FormGroup,FormBuilder,Validators } from '@angular/forms';
 
@@ -14,16 +14,16 @@ import { Router, Routes } from '@angular/router';
 export class ComplainComponent implements OnInit {
 
   
-  complainA:complainC;
-  complainB:complainC;
+  complain:newComplain;
+  complains:newComplain;
   homeIdToUpdate: any;
   // user: Observable<Users[]>;
   // user: Observable<Users[]>;
   flag: boolean = false;
 
-  constructor(private userService: ComplainBService, private formBuilder: FormBuilder,private routes:Router) {
-    this.complainA= new complainC;
-    this.complainB = new complainC;
+  constructor(private userService: complainsService, private formBuilder: FormBuilder,private routes:Router) {
+    this.complain= new newComplain;
+    this.complains = new newComplain;
    }
 
    ngOnInit(): void {
