@@ -17,6 +17,7 @@ import { FeedbackformComponent } from './Component/FeedbackForm/feedbackform.com
 import { ServiceComponent } from './Component/service/service.component';
 import { ComplainComponent } from './Component/complain/complain.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

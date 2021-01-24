@@ -14,6 +14,11 @@ import { Router, Routes } from '@angular/router';
 })
 export class FeedbackformComponent implements OnInit {
 
+  name='';
+  rate='';
+  cNo='';
+  textArea='';
+
   // feed:feeds;
   // feedback:feeds;
   // homeIdToUpdate: any;
@@ -36,4 +41,26 @@ export class FeedbackformComponent implements OnInit {
   // goToSubmit(){
     
   // }
+  
+  inputA(event:any){    
+    this.name = (<HTMLInputElement>event.target).value;
+     }
+  inputB(event:any){
+    this.cNo = (<HTMLInputElement>event.target).value;
+    }
+  inputC(event:any){
+    this.rate = (<HTMLInputElement>event.target).value;
+  }
+  inputD(event:any){
+    this.textArea = (<HTMLInputElement>event.target).value;
+    }
+  sub(){
+    console.log(this.name); 
+    console.log(this.cNo);
+    console.log(this.rate); 
+    console.log(this.textArea);
+    
+  }
+  
+  
 }
