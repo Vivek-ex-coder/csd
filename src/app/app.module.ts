@@ -16,6 +16,7 @@ import { HomeComponent } from './Component/Home/home.component';
 import { FeedbackformComponent } from './Component/FeedbackForm/feedbackform.component';
 import { ServiceComponent } from './Component/service/service.component';
 import { ComplainComponent } from './Component/complain/complain.component';
+import { SignupComponent } from './Component/signup/signup.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ComplainComponent } from './Component/complain/complain.component';
     MenuComponent,
     FeedbackformComponent,
     ServiceComponent,
-    ComplainComponent
+    ComplainComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
