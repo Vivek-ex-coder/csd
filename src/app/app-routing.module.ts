@@ -8,6 +8,7 @@ import { FeedbackformComponent } from './Component/FeedbackForm/feedbackform.com
 import { ServiceComponent } from './Component/service/service.component';
 import { ComplainComponent } from './Component/complain/complain.component';
 import { MenuComponent } from './Component/menu/menu.component';
+import { SignupComponent } from './Component/signup/signup.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,9 @@ const routes: Routes = [
   },{
     path:'complain',component:ComplainComponent
   },{
+    path:'signup',component:SignupComponent
+  },
+  {
     path:'**',component:LoginComponent
   }
 ];
