@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class SignupService {
 
-  constructor() { }
+  constructor(private _http:HttpClient) { }
+  
+  // createUser(user: any){
+  //   return this._http.post("http://localhost:3000/users", user);
+  // }
+  // getAllUser(){
+  //   return this._http.get("http://localhost:3000/users");
+  // }
 }
