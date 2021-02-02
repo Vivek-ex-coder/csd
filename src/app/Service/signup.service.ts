@@ -8,10 +8,10 @@ export class SignupService {
 
   constructor(private _http:HttpClient) { }
   
-  // createUser(user: any){
-  //   return this._http.post("http://localhost:3000/users", user);
-  // }
-  // getAllUser(){
-  //   return this._http.get("http://localhost:3000/users");
-  // }
+  createUser(user: any){
+    return this._http.post("http://localhost:3000/records", user);
+  }
+  getAllUser(){
+    return this._http.get("http://localhost:3000/records");
+  }
 }
